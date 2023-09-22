@@ -375,7 +375,7 @@ article .icon {
     height: 100%;
     border-bottom: 2px solid black;
     border-right: 2px solid black;
-    animation: animate 1.5s linear infinite;
+    animation: animate 2.5s linear infinite;
     opacity: 0;
 }
 
