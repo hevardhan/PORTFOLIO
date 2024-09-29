@@ -1,226 +1,404 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hevardhan S</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="mediaqueries.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="bts.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <nav id="desktop-nav">
-        <img src="assets\logo.png" class="logo">
-        <div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contacts">Contacts</a></li>
-            </ul>
+  <nav class="navbar navbar-expand-lg navbar-light mx-sm-4 mx-lg-2 my-sm-4">
+    <div class="container">
+      <a href="#home" class="w-25">
+        <img src="assets/logo.png" class="img-fluid w-50 px-lg-5" id="responsive-logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h1 class="offcanvas-title" id="offcanvasNavbarLabel">Portfolio</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Hide"></button>
         </div>
-    </nav>
-    <nav id = "hamburger-nav">
-        <img src="assets\logo.png" class="logo">
-        <div class = "hamburger-menu">
-            <div class = "hamburger-icon" onclick="togglemenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class = "menu-links">
-                <li><a href="#about" onclick="togglemenu()">About</a></li>
-                <li><a href="#skills" onclick="togglemenu()">Skills</a></li>
-                <li><a href="#projects" onclick="togglemenu()">Projects</a></li>
-                <li><a href="#contacts" onclick="togglemenu()">Contacts</a></li>
-            </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item h4">
+              <a class="nav-link ms-lg-5" href="#about">About</a>
+            </li>
+            <li class="nav-item h4">
+              <a class="nav-link ms-lg-5" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item h4">
+              <a class="nav-link ms-lg-5" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item h4">
+              <a class="nav-link ms-lg-5" href="#contact">Contact</a>
+            </li>
         </div>
-    </nav>
-    <section id="profile">
-        <div class="section-pic-container">
-            <img src="prof.jpg" class = "profile-pic" alt="hevardhan profile">
+      </div>
+    </div>
+  </nav>
+  <section id="home" style="min-height: 90vh;">
+    <div class="container text-center">
+      <div class="row justify-content-center align-items-center" style="min-height: 80vh;">
+        <div class="col-lg-4">
+          <div class="profile-container d-flex justify-content-center">
+            <img src="prof.jpg" class="profile-pic img-fluid">
+          </div>
         </div>
-        <div class = "section-text">
-            <p class = "section-text-1">Hey Guys,</p>
-            <p class="title">I'm</p>
-            <div class = "wrapper">
-            <div class="words">
+        <div class="col-lg-5 mt-5 mt-lg-0 d-flex align-items-center">
+          <div class="container-fluid text-center">
+            <p class="section-text-1">Hey Guys,</p>
+            <p class="title h2">I'm</p>
+            <div class="wrapper">
+              <div class="words h1">
                 <span>Hevardhan</span>
                 <span>AI Student</span>
                 <span>Python Programmer</span>
-                <span>App Developer</span>
-                <span>Stock Market Enthusiast</span>           
+                <span>Web Developer</span>
+                <span>Stock Market Enthusiast</span>
+              </div>
             </div>
+            <div class="container mt-3">
+              <div class="row">
+                <div class="col">
+                  <img src="assets\linkedin.png" class="icon"
+                    onclick="location.href='https://www.linkedin.com/in/hevardhan-saravanan-33642024a/'">
+                </div>
+                <div class="col">
+                  <img src="assets\github.png" class="icon" onclick="location.href='https://github.com/hevardhan'">
+                </div>
+                <div class="col">
+                  <img src="assets\instagram.png" class="icon"
+                    onclick="location.href='https://instagram.com/its_hevardhan/'">
+                </div>
+                <div class="col">
+                  <img src="assets\discord.png" class="icon" onclick="location.href='https://discordapp.com/users/its_hevardhan'">
+                </div>
+              </div>
             </div>
-            <div class = "social-media-container">
-                <img src="assets\linkedin.png" 
-                class="icon"
-                onclick="location.href='https://www.linkedin.com/in/hevardhan-saravanan-33642024a/'">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="about">
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col-12 text-center">
+          <p class="text-secondary" style="font-size:larger ;">Get to know more</p>
+          <p class="display-4">About Me</p>
+        </div>
+      </div>
+      <div class="row mt-5 text-center">
+        <div class="container mb-5">
+          <img src="about.jpg" class="about-pic img-fluid">
+        </div>
+        <div class="container">
+          <p class="text-center" style="font-size: x-large;">
+            I'm an undergrad student pursuing Artificial Intelligence and Machine Learning. I find it fascinating how
+            computers can be trained to think and solve problems. My goal is to use this knowledge to create practical
+            and exciting applications. Let's team up and bring intelligent ideas to reality!
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="skills">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <p class="text-secondary" style="font-size:larger ;">Explore My</p>
+          <p class="display-4">Skills</p>
+        </div>
+      </div>
+      <div class="row align-items-center justify-content-center mt-5 d-flex align-items-stretch">
+        <div class="container col-10 col-md-7 col-lg-5 mb-5 mb-lg-0" style="border:0.1rem solid; border-radius: 2rem; ">
+          <p class="h4 mt-3 text-center" style="color: rgb(85, 85, 85);">Programming Languages</p>
+          <div class="container mt-4 mb-5">
+            <div class="container mb-3">
+              <p class="h5">Python</p>
+              <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar" style="width: 90%"></div>
+              </div>            
+            </div>
+            <div class="container mb-3">
+              <p class="h5">HTML/CSS</p>
+              <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar" style="width: 75%"></div>
+              </div>            
+            </div>
+            <div class="container mb-3">
+              <p class="h5">C</p>
+              <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar" style="width: 80%"></div>
+              </div>            
+            </div>
+            <div class="container mb-3">
+              <p class="h5">R</p>
+              <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar" style="width: 60%"></div>
+              </div>            
+            </div>
+            <div class="container mb-3">
+              <p class="h5">Java</p>
+              <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar" style="width: 40%"></div>
+              </div>            
+            </div>
+            <div class="container mb-3">
+              <p class="h5">SQL</p>
+              <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar" style="width: 70%"></div>
+              </div>            
+            </div>
+            <div class="container mb-3">
+              <p class="h5">React</p>
+              <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar" style="width: 15%"></div>
+              </div>            
+            </div>
+          </div>
+        </div>
+        <div class="container col-10 col-md-7 col-lg-5 mb-5 mb-md-0 mb-lg-0" style="border:0.1rem solid; border-radius: 2rem; ">
+          <p class="h4 mt-3 text-center" style="color: rgb(85, 85, 85);">Soft-Skills</p>
+          <div class="container mt-4 mb-4">
+            <div class="container mb-3">
+              <p class="h5">Project Management</p>
+              <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar" style="width: 95%"></div>
+              </div>            
+            </div>
+            <div class="container mb-3">
+              <p class="h5">Creativity</p>
+              <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar" style="width: 80%"></div>
+              </div>            
+            </div>
+            <div class="container mb-3">
+              <p class="h5">Problem Solving</p>
+              <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar" style="width: 90%;"></div>
+              </div>            
+            </div>
+            <div class="container mb-3">
+              <p class="h5">Leadership</p>
+              <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar" style="width: 85%"></div>
+              </div>            
+            </div>
+            <div class="container mb-3">
+              <p class="h5">Communication</p>
+              <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar" style="width: 98%"></div>
+              </div>            
+            </div>
+            <div class="container mb-3">
+              <p class="h5">Multi-Tasking</p>
+              <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar" style="width: 85%"></div>
+              </div>            
+            </div>
+            <div class="container mb-3">
+              <p class="h5">Time Management</p>
+              <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar" style="width: 90%"></div>
+              </div>            
+            </div>
+          </div>
+        </div>
 
-                <img src="assets\github.png" 
-                class="icon"
-                onclick="location.href='https://github.com/hevardhan'">
-
-                <img src="assets\instagram.png" 
-                class="icon"
-                onclick="location.href='https://instagram.com/its_hevardhan/'">
-
-                <img src="assets\facebook.png" 
-                class="icon"
-                onclick="location.href='https://facebook.com'">
-            </div>
+      </div>
+    </div>
+  </section>
+  <!-- <section id="achievements">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <p class="text-secondary" style="font-size:larger ;">Showcasing my</p>
+          <p class="display-4">Achievements</p>
         </div>
-    </section>
-    <section id="about">
-        <p class="section-text-1">Get to Know More</p>
-        <h1 class="title">About Me</h1>
-        <div class="section-container">
-            <div class="about-pic-container">
-                <img src="about.jpg" class="about-pic" alt="Profile Pic">
-            </div>
-            <div class = 'about-details-container'>
-                <div class = 'text-container'>
-                    <p>
-                        I'm a student focused on learning about Artificial Intelligence and Machine Learning. I find it fascinating how computers can be trained to think and solve problems. My goal is to use this knowledge to create practical and exciting applications. Let's team up and bring intelligent ideas to reality!
-                    </p>
-                </div>
-            </div>
+      </div>
+    </div>
+  </section> -->
+  <section id="projects">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <p class="text-secondary" style="font-size:larger ;">Browse my</p>
+          <p class="display-4">Projects</p>
         </div>
-        <img src="assets\arrow.png" class="arrow" onclick="location.href='#skills'">
-    </section>
-    <section id="skills">
-        <p class="section-text-1">Explore My</p>
-        <h1 class="title">Skills</h1>
-        <div class="skill-container">
-            <div class="about-container">
-                <div class="details-container">
-                    <h2 class="experience-sub-title">Soft - Skills</h2>
-                    <div class="article-container">
-                        <article>
-                            <img src="assets\tick.png" class="tick-img">
-                            <div>
-                                <h3>Project Management</h3>
-                                <p>Experianced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="assets\tick.png" class="tick-img">
-                            <div>
-                                <h3>Problem Solving</h3>
-                                <p>Experianced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="assets\tick.png" class="tick-img">
-                            <div>
-                                <h3>Creativity</h3>
-                                <p>Experianced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="assets\tick.png" class="tick-img">
-                            <div>
-                                <h3>Leadership</h3>
-                                <p>Experianced</p>
-                            </div>
-                        </article>
-                    </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col d-flex justify-content-center mb-5">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="assets/budget buddy.png" alt="" srcset="" class="img-fluid">
+              </div>
+              <div class="flip-card-back container d-flex flex-column align-items-stretch">
+                <div class="row text-center mt-3">
+                  <p class="title">DESCRIPTION</p>
                 </div>
-                <div class="details-container">
-                    <h2 class="experience-sub-title">Programming Languages</h2>
-                    <div class="article-container">
-                        <article>
-                            <img src="assets\tick.png" class="tick-img">
-                            <div>
-                                <h3>Python</h3>
-                                <p>Experianced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="assets\tick.png" class="tick-img">
-                            <div>
-                                <h3>C</h3>
-                                <p>Advanced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="assets\tick.png" class="tick-img">
-                            <div>
-                                <h3>R</h3>
-                                <p>Advanced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="assets\tick.png" class="tick-img">
-                            <div>
-                                <h3>Html</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="assets\tick.png" class="tick-img">
-                            <div>
-                                <h3>SQL</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="assets\tick.png" class="tick-img">
-                            <div>
-                                <h3>Java Script</h3>
-                                <p>Beginner</p>
-                            </div>
-                        </article>
-                    </div>
+                <div class="row mt-5">
+                  <p>Budget Buddy is an android app developed using Python library (KIVY) to track all the expenses and provide detailed analysis</p>
                 </div>
+                <div class="row">
+                  <button onclick="window.open('https://github.com/hevardhan/Project_main','_blank')">Github Repository</button>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
-        <div class="scroll-anim" onclick="location.href='#projects'">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-    </section>
-    <section id="projects">
-        <p class="section-text-1">Browse My</p>
-        <h1 class="title">Projects</h1>
-        <div class="card-container">
-            <div class="card">
-                <div class="front">
-                    <img src="assets\budget buddy.png">
+        <div class="col d-flex justify-content-center mt-5 mt-lg-0 mt-md-0">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="assets/FAKE HUNTER.png" alt="" srcset="" class="img-fluid">
+              </div>
+              <div class="flip-card-back container d-flex flex-column align-items-stretch">
+                <div class="row text-center mt-3">
+                  <p class="title">DESCRIPTION</p>
                 </div>
-                <div class="back">
-                    <h1>Description</h1>
-                    <p>Budget Buddy is an android app developed using Python library (KIVY) to track all the expenses and provide detailed analysis</p>
-                    <button onclick="window.open('https://github.com/hevardhan/Project_main','_blank')">Github Repository</button>
+                <div class="row mt-5">
+                  <p>Fake Hunter extracts chats and comments from live youtube video of stock market enthusiasts and performs a sentiment analysis on it to find whether the youtuber is giving misleading claims or not</p>
                 </div>
+                <div class="row">
+                      <button onclick="window.open('https://github.com/hevardhan/FakeHunter','_blank')">Github Repository</button>
+                </div>
+              </div>
             </div>
-            <div class="card">
-                <div class="front">
-                    <img src="assets\Students mark manager.png" alt="">
+          </div>
+        </div>
+        <div class="col d-flex justify-content-center mt-5 mt-lg-0">
+          <div class="flip-card justify-content-center align-items-start">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="assets/Students mark manager.png" alt="" srcset="" class="img-fluid">
+              </div>
+              <div class="flip-card-back container d-flex flex-column align-items-stretch">
+                <div class="row text-center mt-3">
+                  <p class="title">DESCRIPTION</p>
                 </div>
-                <div class="back">
-                    <h1>Description</h1>
-                    <p>Grade Manager is a Windows Based Application which stores the Internal Component Marks of each student in the Database created in Firebase</p>
+                <div class="row mt-5">
+                  <p>Grade Manager is a Windows Based Application which stores the Internal Component Marks of each student in the Database created in Firebase</p>
+                </div>
+                <div class="row">
                     <button onclick="window.open('https://github.com/hevardhan/Student-Marks-Manager','_blank')">Github Repository</button>
                 </div>
+              </div>
             </div>
-            <div class="card">
-                <div class="front">
-                    <img src="assets\FAKE HUNTER.png" alt="">
-                </div>
-                <div class="back">
-                    <h1>Description</h1>
-                    <p>Fake Hunter extracts chats and comments from live youtube video of stock market enthusiasts and performs a sentiment analysis on it to find whether the youtuber is giving misleading claims or not</p>
-                    <button onclick="window.open('https://github.com/hevardhan/FakeHunter','_blank')">Github Repository</button>
-                </div>
-            </div>
+          </div>
         </div>
-        <img src="assets\chevron.png" class="arrow" onclick="location.href='#contacts'">
-    </section>
-    <section id="contacts">
-        <p class="section-text-1">Get in Touch</p>
-        <h1 class="title">Contact Me</h1>
-    </section>
-    <script src="script.js"></script>
+        <div class="col d-flex justify-content-center mt-5 mt-lg-0">
+          <div class="flip-card justify-content-center align-items-start">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="assets/tumor.png" alt="" srcset="" class="img-fluid">
+              </div>
+              <div class="flip-card-back container d-flex flex-column align-items-stretch">
+                <div class="row text-center mt-3">
+                  <p class="title">DESCRIPTION</p>
+                </div>
+                <div class="row mt-5">
+                  <p>Grade Manager is a Windows Based Application which stores the Internal Component Marks of each student in the Database created in Firebase</p>
+                </div>
+                <div class="row">
+                    <button onclick="window.open('https://github.com/hevardhan/Student-Marks-Manager','_blank')">Github Repository</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col d-flex justify-content-center mt-5 mt-lg-0">
+          <div class="flip-card justify-content-center align-items-start">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="assets/LEARN HUB.png" alt="" srcset="" class="img-fluid">
+              </div>
+              <div class="flip-card-back container d-flex flex-column align-items-stretch">
+                <div class="row text-center mt-3">
+                  <p class="title">DESCRIPTION</p>
+                </div>
+                <div class="row mt-5">
+                  <p>Grade Manager is a Windows Based Application which stores the Internal Component Marks of each student in the Database created in Firebase</p>
+                </div>
+                <div class="row">
+                    <button onclick="window.open('https://github.com/hevardhan/Student-Marks-Manager','_blank')">Github Repository</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col d-flex justify-content-center mt-5 mt-lg-0">
+          <div class="flip-card justify-content-center align-items-start">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="assets/SKY HIGH.png" alt="" srcset="" class="img-fluid">
+              </div>
+              <div class="flip-card-back container d-flex flex-column align-items-stretch">
+                <div class="row text-center mt-3">
+                  <p class="title">DESCRIPTION</p>
+                </div>
+                <div class="row mt-5">
+                  <p>Grade Manager is a Windows Based Application which stores the Internal Component Marks of each student in the Database created in Firebase</p>
+                </div>
+                <div class="row">
+                    <button onclick="window.open('https://github.com/hevardhan/Student-Marks-Manager','_blank')">Github Repository</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col d-flex justify-content-center mt-5 mt-lg-0">
+          <div class="flip-card justify-content-center align-items-start">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="assets/OCT.png" alt="" srcset="" class="img-fluid">
+              </div>
+              <div class="flip-card-back container d-flex flex-column align-items-stretch">
+                <div class="row text-center mt-3">
+                  <p class="title">DESCRIPTION</p>
+                </div>
+                <div class="row mt-5">
+                  <p>Grade Manager is a Windows Based Application which stores the Internal Component Marks of each student in the Database created in Firebase</p>
+                </div>
+                <div class="row">
+                    <button onclick="window.open('https://github.com/hevardhan/Student-Marks-Manager','_blank')">Github Repository</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <p class="text-secondary" style="font-size:larger ;">Get in touch</p>
+          <p class="display-4">Contact me</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="visme_d" data-title="Simple Newsletter Subscription" data-url="1jmm19y8-simple-newsletter-subscription" data-domain="forms" data-full-page="false" data-min-height="500px" data-form-id="71632"></div><script src="https://static-bundles.visme.co/forms/vismeforms-embed.js"></script>
+      </div>
+    </div>
+  </section>
+  <footer class="bg-dark text-white py-4">
+    <div class="container text-center">
+      <p class="mb-0">Developed with 💖</p>
+    </div>
+  </footer>
 </body>
+
 </html>
